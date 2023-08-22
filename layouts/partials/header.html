@@ -18,9 +18,7 @@
           {{ if eq .Type "list" }}
             <h1>{{ if .Data.Singular }}#{{ end }}{{ .Title }}</h1>
             {{ else }}
-            <h1>
-              {{ with $title }}{{ . }}{{ else }}<br />{{ end }}
-            </h1>
+            <h1>{{ with $title }}{{ . }}{{ else }}<br />{{ end }}</h1>
           {{ end }}
           {{ if eq .Type "post" }}
             {{ partial "postmeta.html" . }}

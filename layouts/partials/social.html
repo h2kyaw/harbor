@@ -16,10 +16,7 @@
     {{ range $i, $social :=  .Site.Params.social_static }}
       {{ if or ($len_socials) (ne $i 0) }} &nbsp;&ndash;&nbsp; {{ end }}
       <a class="social-icon" href="{{ $social.url }}" name="{{ $social.name }}">
-        <img
-          src="{{ $base }}images/{{ $social.icon }}"
-          alt="{{ $social.name }}"
-        />
+        <img src="{{ $base }}images/{{ $social.icon }}" alt="{{ $social.name }}" />
       </a>
     {{ end }}
   {{ end }}
