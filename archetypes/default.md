@@ -1,14 +1,17 @@
 +++
 title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
+categories = [""]
 tags = [""]
-draft = false
-toc = false
-backtotop = false
+series = ["Tools"]
+image = ""
+description = ""
+toc = true
+backtotop = true
 +++
 
 # Title
 
-<!-- toc -->
+<!--more-->
 
 ## Contents
